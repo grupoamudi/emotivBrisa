@@ -3,7 +3,7 @@ from emotivDetector import *
 from FakePacket import *
 import time
 
-packet = FakePacket('vep.txt') #arquivo
+packet = FakePacket('signals/vep.txt') #arquivo
 teste = GraphicManager()
 teste.addGraphic('gyroX',50,0,1,0)
 teste.addGraphic('gyroY',160,0,1,0)

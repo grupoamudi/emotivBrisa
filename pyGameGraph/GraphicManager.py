@@ -38,7 +38,7 @@ class GraphicManager(object):
 
     def stopRecording(self):
         self.recording = False
-        arq = open('teste.txt','w')
+        arq = open('signals/teste.txt','w')
         for name in self.recordDict:
             arq.write(name + ';' + str(self.graphicsDict[name].length) + ';' +  str(self.graphicsDict[name].height) + ';' +  str(self.graphicsDict[name].x) +';' +  str(self.graphicsDict[name].y) + ';' +  str(self.graphicsDict[name].gain)+'\n')
             for value in self.recordDict[name]:
